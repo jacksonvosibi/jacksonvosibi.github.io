@@ -1,0 +1,43 @@
+<!style.css
+<html>
+<head>
+<tbody {
+font-family: Arial;
+margin: 0;
+background-color: #fff8e1;
+}
+
+header {
+background: green;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+nav {
+background: red;
+padding: 10px;
+text-align: center;
+}
+
+nav a {
+color: white;
+margin: 10px;
+text-decoration: none;
+}
+
+section {
+padding: 20px;
+}
+
+.whatsapp {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: green;
+color: white;
+padding: 10px;
+text-decoration: none;
+border-radius: 10px;
+}
+</html>

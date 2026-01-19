@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jackson Vosibi - Graphic Designer</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<header>
+<h1>JACKSON VOSIBI</h1>
+<p>Professional Graphic Designer – Cameroon</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<h2>Welcome to My Official Website</h2>
+
+<p>My name is JACKSON VOSIBI. I am a creative graphic designer from Cameroon.</p>
+
+<p>I design logos, flyers, banners, certificates, wedding invitations and more.</p>
+</section>
+
+<footer>
+<p>© 2026 Jackson Vosibi</p>
+</footer>
+
+<a href="https://wa.me/237650229474" class="whatsapp" target="_blank">
+Chat with me on WhatsApp
+</a>
+
+</body>
+</html>
