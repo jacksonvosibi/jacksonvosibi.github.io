@@ -1,27 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio - Jackson Vosibi</title>
-<link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Jackson Vosibi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio {
+            padding: 40px;
+            text-align: center;
+        }
 
+        .portfolio h1 {
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
 
 <header>
-<h1>My Portfolio</h1>
+    <h2>Jackson Vosibi</h2>
 </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About Me</a>
-<a href="services.html">Services</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
-</nav>
+<section class="portfolio">
+    <h1>My Portfolio</h1>
+    <p>Some of my graphic design works</p>
 
-<section>
-<h2>My Design Works</h2>
-<p>Your images will be added here later.</p>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300" alt="Design 1">
+        <img src="https://via.placeholder.com/300" alt="Design 2">
+        <img src="https://via.placeholder.com/300" alt="Design 3">
+        <img src="https://via.placeholder.com/300" alt="Design 4">
+        <img src="https://via.placeholder.com/300" alt="Design 5">
+        <img src="https://via.placeholder.com/300" alt="Design 6">
+    </div>
 </section>
 
 </body>
