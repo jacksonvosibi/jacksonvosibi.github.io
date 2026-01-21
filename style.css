@@ -1,43 +1,43 @@
-<!style.css
-<html>
-<head>
-<tbody {
-font-family: Arial;
-margin: 0;
-background-color: #fff8e1;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-header {
-background: green;
-color: white;
-padding: 20px;
-text-align: center;
+/* Navigation */
+.navbar {
+  background: #0a7a1f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
 }
 
-nav {
-background: red;
-padding: 10px;
-text-align: center;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
 
-nav a {
-color: white;
-margin: 10px;
-text-decoration: none;
+.navbar ul li {
+  margin-left: 20px;
 }
 
-section {
-padding: 20px;
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.whatsapp {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: green;
-color: white;
-padding: 10px;
-text-decoration: none;
-border-radius: 10px;
+/* Hero section */
+.hero {
+  background: #0a7a1f;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
 }
-</html>
+
+/* Content section */
+.section {
+  padding: 30px;
+}
