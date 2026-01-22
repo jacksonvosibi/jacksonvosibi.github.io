@@ -27,3 +27,22 @@
 
 </body>
 </html>
+const toggle = document.getElementById("darkToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+    toggle.textContent = "☀️ Light Mode";
+  } else {
+    localStorage.setItem("theme", "light");
+    toggle.textContent = "🌙 Dark Mode";
+  }
+});
+
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+  toggle.textContent = "☀️ Light Mode";
+}
