@@ -217,3 +217,14 @@ body {
 .btn:hover {
   background: #085f08;
 }
+.hero {
+  text-align: center;
+  padding: 40px 15px;
+  background: #f4f8f4;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
