@@ -153,3 +153,21 @@ body {
   margin: 15px 0 5px;
   font-size: 18px;
 }
+.dashboard {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dashboard {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dash-card {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
