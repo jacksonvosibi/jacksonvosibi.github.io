@@ -1,0 +1,29 @@
+<!style.css
+<html>
+<head>
+<title>About Jackson Vosibi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>About Me</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Me</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<h2>Hello, I am JACKSON VOSIBI</h2>
+<p>I am a professional graphic designer based in Cameroon.</p>
+<p>Design is my passion and creativity is my strength.</p>
+</section>
+
+</body>
+</html>
