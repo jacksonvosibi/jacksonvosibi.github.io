@@ -84,3 +84,10 @@ body {
 .whatsapp-btn:hover {
   background: #1ebe5d;
 }
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
