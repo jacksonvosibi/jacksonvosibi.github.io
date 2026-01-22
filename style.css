@@ -41,21 +41,3 @@ body {
 .section {
   padding: 30px;
 }
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  padding: 15px;
-}
-
-.card {
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 6px;
-}
