@@ -334,3 +334,16 @@ body {
   color: green;
   cursor: pointer;
 }
+.testimonials {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 500px;
+  border-left: 4px solid green;
+  border-radius: 8px;
+}
