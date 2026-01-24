@@ -46,3 +46,31 @@ if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
   toggle.textContent = "☀️ Light Mode";
 }
+<script>
+document.getElementById("commentForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const comment = document.getElementById("comment").value;
+
+  const commentDiv = document.createElement("div");
+  commentDiv.className = "comment";
+
+  commentDiv.innerHTML = `
+    <strong>${name}</strong>
+    <p>${comment}</p>
+    <button class="like-btn">👍 Like (<span>0</span>)</button>
+  `;
+
+  document.getElementById("commentsList").prepend(commentDiv);
+
+  const likeBtn = commentDiv.querySelector(".like-btn");
+  const likeCount = likeBtn.querySelector("span");
+
+  likeBtn.addEventListener("click", () => {
+    likeCount.textContent = parseInt(likeCount.textContent) + 1;
+  });
+
+  document.getElementById("commentForm").reset();
+});
+</script>
