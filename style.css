@@ -272,3 +272,10 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   font-weight: 500;
 }
+.service-card {
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
