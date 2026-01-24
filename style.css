@@ -347,3 +347,15 @@ body {
   border-left: 4px solid green;
   border-radius: 8px;
 }
+.pricing {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.price-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
