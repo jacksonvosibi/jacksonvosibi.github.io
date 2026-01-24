@@ -283,3 +283,54 @@ body {
   background: #f7f7f7;
   padding: 30px 15px;
 }
+.comments-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.comments-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#commentForm input,
+#commentForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#commentForm button {
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.comment {
+  background: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border-left: 4px solid green;
+}
+
+.comment strong {
+  display: block;
+}
+
+.like-btn {
+  margin-top: 5px;
+  background: none;
+  border: none;
+  color: green;
+  cursor: pointer;
+}
