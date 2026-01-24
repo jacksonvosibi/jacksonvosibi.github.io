@@ -254,3 +254,21 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+.offers {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.offer-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  font-weight: 500;
+}
