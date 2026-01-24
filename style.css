@@ -279,3 +279,7 @@ body {
   margin-bottom: 25px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
+.why-us {
+  background: #f7f7f7;
+  padding: 30px 15px;
+}
