@@ -38,3 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+function login() {
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+  const msg = document.getElementById("loginMsg");
+
+  // Demo credentials (you can change them)
+  if (user === "client" && pass === "1234") {
+    window.location.href = "dashboard.html";
+  } else {
+    msg.textContent = "Invalid login details";
+    msg.style.color = "red";
+  }
+}
