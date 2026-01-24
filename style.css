@@ -228,3 +228,29 @@ body {
 .hero h1 {
   margin-bottom: 10px;
 }
+.hero {
+  background: linear-gradient(135deg, #0b7a0b, #16a016);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: white;
+  color: #0b7a0b;
+  padding: 12px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
