@@ -7,59 +7,14 @@
 </head>
 <body>
 
-<section class="dashboard">
-  <h2>Client Dashboard</h2>
-  <p>Welcome! Track your project and payment status.</p>
-
-  <div class="dash-card">
-    <h3>Project Status</h3>
-    <p>Status: <strong>In Progress</strong></p>
-    <p>Service: Website Creation</p>
-  </div>
-
-  <div class="dash-card">
-    <h3>Payment</h3>
-    <p>Total Cost: <strong>100,000 FCFA</strong></p>
-    <p>Deposit Paid: <strong>50%</strong></p>
-    <p>Balance: <strong>50,000 FCFA</strong></p>
-  </div>
-
-  <div class="dash-card">
-    <h3>Contact Designer</h3>
-    <a href="https://wa.me/237650229474" class="btn">Chat on WhatsApp</a>
-  </div>
-</section>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Client Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<section class="dashboard">
-  <h2>Welcome to Your Dashboard</h2>
-  <p>Your projects and messages will appear here.</p>
-
-  <a href="index.html">Back to Home</a>
-</section>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Client Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
 <h2>Welcome, <span id="clientName"></span></h2>
 
-<p>Status: <strong>Active Client</strong></p>
+<div class="card">
+  <h3>Payment Status</h3>
+  <p>Status: <strong id="payStatus"></strong></p>
+  <p>Service: <strong id="service"></strong></p>
+  <p>Amount: <strong id="amount"></strong></p>
+</div>
 
 <button onclick="logout()">Logout</button>
 
