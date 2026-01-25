@@ -86,3 +86,38 @@ function displayComments() {
     container.appendChild(div);
   });
 }
+// Load saved comments when page loads
+document.addEventListener("DOMContentLoaded", loadComments);
+
+function saveComment() {
+  const name = document.getElementById("name").value;
+  const comment = document.getElementById("comment").value;
+
+  if (name === "" || comment === "") return;
+
+  const comments = JSON.parse(localStorage.getItem("comments")) || [];
+
+  comments.push({ name, comment });
+
+  localStorage.setItem("comments", JSON.stringify(comments));
+
+  displayComments();
+}
+
+function loadComments() {
+  displayComments();
+}
+
+function displayComments() {
+  const comments = JSON.parse(localStorage.getItem("comments")) || [];
+  const container = document.getElementById("comments");
+
+  container.innerHTML = "";
+
+  comments.forEach(c => {
+    const div = document.createElement("div");
+    div.className = "comment-box";
+    div.innerHTML = `<strong>${c.name}</strong><p>${c.comment}</p>`;
+    container.appendChild(div);
+  });
+}
