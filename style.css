@@ -17,28 +17,16 @@ body {
 
 /* Navigation */
 .navbar {
-  background: #0a7a1f;
-  color: white;
+  background: #ffffff;
+  color: #222;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-}
-
-.navbar ul li {
-  margin-left: 20px;
-}
-
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 14px 24px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /* Hero section */
@@ -574,7 +562,29 @@ body {
   padding: 40px 20px;
   text-align: center;
 }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
 
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background: #0a7a1f;
+  color: white;
+}
 .why-me ul {
   list-style: none;
   padding: 0;
