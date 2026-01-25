@@ -20,3 +20,35 @@
 <script src="admin.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+</head>
+<body>
+
+<h2>Admin – Update Client Payment</h2>
+
+<input id="index" placeholder="Client index (0,1,2)" />
+<input id="status" placeholder="Payment Status (Paid/Pending)" />
+<input id="service" placeholder="Service" />
+<input id="amount" placeholder="Amount" />
+
+<button onclick="update()">Update Client</button>
+
+<script>
+function update() {
+  let users = JSON.parse(localStorage.getItem("users"));
+  let i = document.getElementById("index").value;
+
+  users[i].paymentStatus = document.getElementById("status").value;
+  users[i].service = document.getElementById("service").value;
+  users[i].amount = document.getElementById("amount").value;
+
+  localStorage.setItem("users", JSON.stringify(users));
+  alert("Updated successfully");
+}
+</script>
+
+</body>
+</html>
