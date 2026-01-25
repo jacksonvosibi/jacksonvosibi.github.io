@@ -448,3 +448,39 @@ button {
   font-weight: bold;
   margin-top: 15px;
 }
+.payment-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.payment-section h2 {
+  margin-bottom: 10px;
+}
+
+.payment-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 18px;
+  margin: 15px auto;
+  max-width: 360px;
+  border-radius: 10px;
+}
+
+.notice {
+  font-size: 14px;
+  color: #555;
+  margin-top: 15px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
