@@ -620,3 +620,26 @@ body {
   text-align: center;
   padding: 15px;
 }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background: #0a7a1f;
+  color: white;
+}
