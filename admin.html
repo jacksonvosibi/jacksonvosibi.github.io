@@ -1,1 +1,22 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Admin Login</h2>
+
+<input type="password" id="adminPass" placeholder="Enter admin password">
+<button onclick="login()">Login</button>
+
+<div id="adminPanel" style="display:none;">
+  <h3>Client Comments</h3>
+  <div id="adminComments"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
