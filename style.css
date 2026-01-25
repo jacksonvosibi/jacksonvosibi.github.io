@@ -359,3 +359,22 @@ body {
   max-width: 300px;
   border-radius: 10px;
 }
+.login-box {
+  max-width: 300px;
+  margin: 80px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.dashboard {
+  text-align: center;
+  padding: 60px 20px;
+}
