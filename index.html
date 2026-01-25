@@ -98,6 +98,16 @@
 <footer class="footer">
   <p>© 2026 AJASCO • All Rights Reserved</p>
 </footer>
-  
+  <script>
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
 </body>
 </html>
