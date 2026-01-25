@@ -28,6 +28,11 @@ body {
   top: 0;
   z-index: 1000;
 }
+/* Navbar shadow on scroll */
+.navbar.scrolled {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
 }
 /* Hero section */
 .hero {
