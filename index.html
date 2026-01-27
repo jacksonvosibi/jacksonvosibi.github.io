@@ -137,5 +137,28 @@
     }, 1500);
   });
 </script>
+<script>
+  document.getElementById("welcomeVoice").addEventListener("click", () => {
+
+    // English message
+    const english = new SpeechSynthesisUtterance(
+      "Welcome to AJASCO Design Services. We help businesses and schools grow online."
+    );
+    english.lang = "en-US";
+
+    // French message
+    const french = new SpeechSynthesisUtterance(
+      "Bienvenue chez AJASCO Design Services. Nous aidons les entreprises et les écoles à se développer en ligne."
+    );
+    french.lang = "fr-FR";
+
+    speechSynthesis.speak(english);
+
+    // Speak French after English finishes
+    english.onend = () => {
+      speechSynthesis.speak(french);
+    };
+  });
+</script>
 </body>
 </html>
