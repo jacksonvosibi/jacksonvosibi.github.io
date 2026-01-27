@@ -121,3 +121,6 @@ function displayComments() {
     container.appendChild(div);
   });
 }
+setTimeout(() => {
+  document.getElementById("welcome-screen").style.display = "none";
+}, 4000);
