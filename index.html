@@ -1,181 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <meta name="google-site-verification" content="nZ9gQ5MkFcf1pMB02IqiBzK6UwnzT2nGARN2GGJlHjo" />
   <meta charset="UTF-8">
-  <title><marquee>AJASCO DESIGN</marquee></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJASCO Design Services</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Jackson Vosibi is a professional graphic designer offering logo design, banners, flyers, wedding invitations and certificates in Cameroon.">
-<meta name="keywords" content="Graphic designer Cameroon, logo design, flyer design, banner design, wedding invitation, certificate design">
-<meta name="author" content="Jackson Vosibi">
-<meta" content="width=device-width, initial-scale=1.0">
 </head>
-  
-  <a href="https://api.whatsapp.com/send?phone=237650229474&text=Hello%20I%20saw%20your%20website%20and%20need%20a%20design" 
-   class="whatsapp-btn" 
-   target="_blank">
-  💬 Chat on WhatsApp
-</a>
-  <script src="script.js"></script>
 <body>
+
   <!-- Welcome Screen -->
-<!-- Welcome Screen -->
-<div id="welcome-screen">
-  <h1>WELCOME TO</h1>
-  <h2>AJASCO DESIGN SERVICES</h2>
-  <button id="enter-site">ENTER SITE</button>
-</div>
-<!-- NAVIGATION -->
-<nav class="navbar">
-  <div class="logo">AJASCO DESIGN</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-<button id="voiceBtn" class="voice-btn">
-  🔊 Tap to hear welcome
-</button>
-<!-- HERO SECTION -->
-<section class="hero">
-  <h1>Ajasco Design Services</h1>
-  <p>We help businesses and schools grow online with modern websites, branding, and digital solutions.</p>
-
-  <div class="hero-buttons">
-    <a href="services.html" class="btn">View Services</a>
-    <a href="contact.html" class="btn outline">Contact Us</a>
-  </div>
-</section>
-  <button id="welcomeVoice" class="voice-btn">
-  🔊 Play Welcome Message
-</button>
-
-<!-- SERVICES PREVIEW -->
-<section class="services-preview">
-  <h2>Our Services</h2>
-
-  <div class="service-grid">
-    <div class="service-card">
-      <h3>🌐 Website Design</h3>
-      <p>Professional, mobile-friendly websites for businesses and individuals.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>🆔 ID Card Design</h3>
-      <p>School identity cards and official designs.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>🎨 Branding</h3>
-      <p>Logos, flyers, banners, and digital brand identity.</p>
-    </div>
-  </div>
-</section>
-
-<!-- WHY CHOOSE ME -->
-<section class="why-me">
-  <h2>Why Choose Us?</h2>
-  <ul>
-    <li>✔ Fast delivery</li>
-    <li>✔ Affordable pricing</li>
-    <li>✔ Mobile-friendly designs</li>
-    <li>✔ Cameroon-based support</li>
-  </ul>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <h2>What Clients Say</h2>
-
-  <div class="testimonial-card">
-    <p>"Very professional and fast service."</p>
-    <strong>— Client</strong>
+  <div id="welcome-screen">
+    <h1>WELCOME TO</h1>
+    <h2>AJASCO DESIGN SERVICES</h2>
+    <button id="enter-site">ENTER SITE</button>
   </div>
 
-  <div class="testimonial-card">
-    <p>"Our business website looks amazing!"</p>
-    <strong>— Client</strong>
+  <!-- Main Content -->
+  <div id="main-content">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">AJASCO DESIGN</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Welcome to AJASCO Design Services</h1>
+      <video controls autoplay muted loop>
+        <source src="videos/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button id="welcomeVoice" class="voice-btn">🔊 Play Welcome Message</button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Website Creation</li>
+        <li>School Identity Cards Design</li>
+        <li>Dashboard Setup</li>
+        <li>Deposit Methods Integration</li>
+      </ul>
+
+      <!-- Client Comments -->
+      <div id="service-comments">
+        <h3>Client Comments</h3>
+        <form id="comment-form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <textarea id="comment" placeholder="Write your comment..." required></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+        <div id="comments-list"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About AJASCO</h2>
+      <p>We help businesses and schools grow online. Our expertise spans web design, digital marketing, and branding.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: contact@ajasco.com</p>
+      <p>Phone: +237 6XXXXXXX</p>
+    </section>
+
   </div>
-</section>
 
-<!-- CALL TO ACTION -->
-<section class="cta">
-  <h2>Ready to Work With Us?</h2>
-  <a href="contact.html" class="btn">Get Started</a>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2026 AJASCO • All Rights Reserved</p>
-</footer>
-  <script>
-  const navbar = document.querySelector('.navbar');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
-<script>
-  const btn = document.getElementById("welcomeVoice");
-
-  btn.addEventListener("click", () => {
-    if (!('speechSynthesis' in window)) {
-      alert("Your browser does not support voice.");
-      return;
-    }
-
-    // Cancel any previous speech
-    <script>
-  function speakWelcome() {
-    if (!('speechSynthesis' in window)) return;
-
-    speechSynthesis.cancel();
-
-    const userLang = navigator.language || navigator.userLanguage;
-    let message;
-
-    if (userLang.startsWith('fr')) {
-      // French
-      message = new SpeechSynthesisUtterance(
-        "Bienvenue chez AJASCO Design Services. Nous aidons les entreprises et les écoles à se développer en ligne."
-      );
-      message.lang = "fr-FR";
-    } else {
-      // Default to English
-      message = new SpeechSynthesisUtterance(
-        "Welcome to AJASCO Design Services. We help businesses and schools grow online."
-      );
-      message.lang = "en-US";
-    }
-
-    // Set voice properties
-    message.rate = 1;
-    message.pitch = 1;
-    message.volume = 1;
-
-    // Speak
-    speechSynthesis.speak(message);
-  }
-
-  // Run on page load
-  window.addEventListener("load", () => {
-    // Auto-play after 1 second (give time for browser)
-    setTimeout(() => {
-      speakWelcome();
-    }, 1000);
-  });
-
-  // Optional: button to replay
-  const btn = document.getElementById("welcomeVoice");
-  if (btn) {
-    btn.addEventListener("click", speakWelcome);
-  }
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
