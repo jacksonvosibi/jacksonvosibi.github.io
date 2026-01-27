@@ -735,3 +735,13 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
+.voice-btn {
+  background: #00aaff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 20px;
+}
