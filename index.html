@@ -121,43 +121,30 @@
       navbar.classList.remove('scrolled');
     }
   });
-</script>
-  <script>
-  window.addEventListener("load", () => {
-    const message = new SpeechSynthesisUtterance();
-    message.text =
-      "Welcome to AJASCO Design Services. We help businesses and schools grow online. Feel free to explore our services.";
-    message.rate = 1;
-    message.pitch = 1;
-    message.volume = 1;
-
-    // Delay so browser allows audio
-    setTimeout(() => {
-      speechSynthesis.speak(message);
-    }, 1500);
-  });
-</script>
 <script>
-  document.getElementById("welcomeVoice").addEventListener("click", () => {
+  const btn = document.getElementById("welcomeVoice");
 
-    // English message
+  btn.addEventListener("click", () => {
+    if (!('speechSynthesis' in window)) {
+      alert("Your browser does not support voice.");
+      return;
+    }
+
+    // Cancel any previous speech
+    speechSynthesis.cancel();
+
     const english = new SpeechSynthesisUtterance(
       "Welcome to AJASCO Design Services. We help businesses and schools grow online."
     );
     english.lang = "en-US";
 
-    // French message
     const french = new SpeechSynthesisUtterance(
       "Bienvenue chez AJASCO Design Services. Nous aidons les entreprises et les écoles à se développer en ligne."
     );
     french.lang = "fr-FR";
 
     speechSynthesis.speak(english);
-
-    // Speak French after English finishes
-    english.onend = () => {
-      speechSynthesis.speak(french);
-    };
+    english.onend = () => speechSynthesis.speak(french);
   });
 </script>
 </body>
