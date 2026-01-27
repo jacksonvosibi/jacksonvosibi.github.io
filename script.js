@@ -120,7 +120,7 @@ function displayComments() {
     div.innerHTML = `<strong>${c.name}</strong><p>${c.comment}</p>`;
     container.appendChild(div);
   });
-}
-setTimeout(() => {
+document.getElementById("enter-site").addEventListener("click", () => {
   document.getElementById("welcome-screen").style.display = "none";
-}, 4000);
+  document.getElementById("main-content").style.display = "block";
+});
