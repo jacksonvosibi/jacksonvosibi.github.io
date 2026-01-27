@@ -699,3 +699,34 @@ body {
   background: white;
   transform: scale(1.05);
 }
+#service-comments {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+#comment-form input,
+#comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#comment-form button {
+  background: #064d14;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.comment {
+  background: #f4f4f4;
+  padding: 10px;
+  border-left: 4px solid #064d14;
+  margin-top: 10px;
+  border-radius: 5px;
+}
