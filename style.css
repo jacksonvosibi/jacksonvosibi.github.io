@@ -62,3 +62,6 @@ section {padding:50px 20px; max-width:900px; margin:0 auto;}
 .mock-list {display:flex; flex-wrap:wrap; gap:20px;}
 .mock-item {background:white; padding:20px; border-radius:10px; flex:1 1 200px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.1);}
 .pay-btn {background:#00aaff; color:white; border:none; padding:10px 15px; border-radius:5px; cursor:pointer; margin-top:10px;}
+
+/* WhatsApp Button */
+#whatsapp-btn {background:#25D366; color:white; border:none; padding:12px 22px; border-radius:25px; cursor:pointer; margin-top
