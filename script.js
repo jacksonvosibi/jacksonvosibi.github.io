@@ -154,3 +154,11 @@ function addCommentToPage({ name, comment }) {
   div.innerHTML = `<strong>${name}</strong><p>${comment}</p>`;
   commentsList.appendChild(div);
 }
+<script>
+  document.getElementById("voiceBtn").onclick = () => {
+    const voice = new SpeechSynthesisUtterance(
+      "Welcome to AJASCO Design Services. How can we help you today?"
+    );
+    speechSynthesis.speak(voice);
+  };
+</script>
