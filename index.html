@@ -8,74 +8,99 @@
 </head>
 <body>
 
-  <!-- Welcome Screen -->
-  <div id="welcome-screen">
-    <h1>WELCOME TO</h1>
-    <h2>AJASCO DESIGN SERVICES</h2>
-    <button id="enter-site">ENTER SITE</button>
-  </div>
+<!-- Welcome Screen -->
+<div id="welcome-screen">
+  <h1>WELCOME TO</h1>
+  <h2>AJASCO DESIGN SERVICES</h2>
+  <button id="enter-site">ENTER SITE</button>
+</div>
 
-  <!-- Main Content -->
-  <div id="main-content">
+<div id="main-content">
 
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">AJASCO DESIGN</div>
-      <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AJASCO DESIGN</div>
+    <div class="hamburger" id="hamburger">
+      <div></div><div></div><div></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-      <h1>Welcome to AJASCO Design Services</h1>
-      <video controls autoplay muted loop>
-        <source src="videos/intro.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <button id="welcomeVoice" class="voice-btn">🔊 Play Welcome Message</button>
-    </section>
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <video autoplay muted loop id="hero-video">
+      <source src="videos/intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+      <h1>WELCOME TO AJASCO DESIGN SERVICES</h1>
+      <p>We help businesses and schools grow online</p>
+      <button id="welcomeVoice" class="voice-btn">🔊 Hear Welcome</button>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Website Creation</li>
-        <li>School Identity Cards Design</li>
-        <li>Dashboard Setup</li>
-        <li>Deposit Methods Integration</li>
-      </ul>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Design Services</h2>
+    <ul>
+      <li>Website Creation</li>
+      <li>School Identity Cards Design</li>
+      <li>Dashboard Setup</li>
+      <li>Deposit Method Integration</li>
+    </ul>
 
-      <!-- Client Comments -->
-      <div id="service-comments">
-        <h3>Client Comments</h3>
-        <form id="comment-form">
-          <input type="text" id="name" placeholder="Your Name" required>
-          <textarea id="comment" placeholder="Write your comment..." required></textarea>
-          <button type="submit">Post Comment</button>
-        </form>
-        <div id="comments-list"></div>
+    <!-- Client Comments -->
+    <div id="service-comments">
+      <h3>Client Comments</h3>
+      <form id="comment-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="comment" placeholder="Write your comment..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+      <div id="comments-list"></div>
+    </div>
+  </section>
+
+  <!-- Pricing / Mock Questions Section -->
+  <section id="pricing">
+    <h2>Regional Mock Questions</h2>
+    <div class="mock-list">
+      <div class="mock-item">
+        <p>Form 4 Regional Mock - 2025</p>
+        <button class="pay-btn" data-file="mock_questions/form4_2025.pdf" data-price="500">
+          Pay 500 FCFA & Download
+        </button>
       </div>
-    </section>
+      <div class="mock-item">
+        <p>Form 3 Regional Mock - 2025</p>
+        <button class="pay-btn" data-file="mock_questions/form3_2025.pdf" data-price="500">
+          Pay 500 FCFA & Download
+        </button>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about">
-      <h2>About AJASCO</h2>
-      <p>We help businesses and schools grow online. Our expertise spans web design, digital marketing, and branding.</p>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About AJASCO</h2>
+    <p>We help businesses and schools grow online. Our expertise spans web design, digital marketing, and branding.</p>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: contact@ajasco.com</p>
-      <p>Phone: +237 6XXXXXXX</p>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@ajasco.com</p>
+    <p>Phone: +237 6XXXXXXX</p>
+  </section>
 
-  </div>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
