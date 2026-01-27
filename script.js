@@ -62,24 +62,47 @@ form.addEventListener("submit", e => {
 });
 
 // Paystack Payment Integration
-const payButtons = document.querySelectorAll(".pay-btn");
+// Paystack Payment Integration via backend
 payButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const file = btn.dataset.file;
+  btn.addEventListener("click", async () => {
+    const file = btn.dataset.file.split("/")[1]; // only filename
     const price = btn.dataset.price;
 
+    let email = prompt("Enter your email for receipt");
+    if(!email) return;
+
     let handler = PaystackPop.setup({
-      key: 'YOUR_PUBLIC_PAYSTACK_KEY', // replace with your Paystack public key
-      email: prompt("Enter your email for receipt"),
-      amount: price*100, // Paystack in kobo
+      key: 'YOUR_PUBLIC_PAYSTACK_KEY',
+      email: email,
+      amount: price*100,
       currency: "XAF",
-      callback: function(response){
-        alert('Payment successful! Download will start.');
-        window.location.href = file;
+      callback: async function(response){
+        // Verify with backend
+        try {
+          const res = await fetch("http://localhost:5000/verify-payment", {
+            method:"POST",
+            headers: {"Content-Type":"application/json"},
+            body: JSON.stringify({reference:response.reference, file})
+          });
+          const data = await res.json();
+          if(data.status){
+            alert("Payment verified! Download will start.");
+            window.location.href = data.downloadUrl;
+          } else {
+            alert("Payment verification failed.");
+          }
+        } catch(err){
+          console.error(err);
+          alert("Server error during verification");
+        }
       },
       onClose: function(){
         alert('Payment cancelled.');
       }
+    });
+    handler.openIframe();
+  });
+});
     });
     handler.openIframe();
   });
