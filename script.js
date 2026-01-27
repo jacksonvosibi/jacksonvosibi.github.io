@@ -124,3 +124,33 @@ document.getElementById("enter-site").addEventListener("click", () => {
   document.getElementById("welcome-screen").style.display = "none";
   document.getElementById("main-content").style.display = "block";
 });
+const form = document.getElementById("comment-form");
+const commentsList = document.getElementById("comments-list");
+
+// Load saved comments
+const savedComments = JSON.parse(localStorage.getItem("serviceComments")) || [];
+
+savedComments.forEach(addCommentToPage);
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const comment = document.getElementById("comment").value;
+
+  const commentData = { name, comment };
+
+  savedComments.push(commentData);
+  localStorage.setItem("serviceComments", JSON.stringify(savedComments));
+
+  addCommentToPage(commentData);
+
+  form.reset();
+});
+
+function addCommentToPage({ name, comment }) {
+  const div = document.createElement("div");
+  div.classList.add("comment");
+  div.innerHTML = `<strong>${name}</strong><p>${comment}</p>`;
+  commentsList.appendChild(div);
+}
