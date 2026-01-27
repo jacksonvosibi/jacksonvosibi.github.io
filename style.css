@@ -36,18 +36,23 @@ body {font-family: Arial, sans-serif; line-height: 1.6; background:#f0f0f0;}
 }
 .nav-links.active {display:flex;}
 
-/* Hero */
-.hero {position:relative; height:80vh; display:flex; justify-content:center; align-items:center; color:white; text-align:center;}
-#hero-video {position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:1; opacity:0.6;}
-.hero-overlay {position:relative; z-index:2;}
-.hero-overlay h1 {font-size:2rem; margin-bottom:10px;}
-.hero-overlay p {font-size:1.2rem;}
+/* Hero without video */
+.hero {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, #0a7a1f, #064d14);
+}
+.hero-overlay h1 {font-size:2.5rem; margin-bottom:10px;}
+.hero-overlay p {font-size:1.3rem;}
+.hero-overlay .voice-btn {margin-top:20px; background:#00aaff; color:white; padding:12px 22px; border:none; border-radius:25px; cursor:pointer;}
 
 /* Sections */
 section {padding:50px 20px; max-width:900px; margin:0 auto;}
-
-/* Voice Button */
-.voice-btn {background:#00aaff; color:white; border:none; padding:12px 22px; border-radius:25px; cursor:pointer; margin-top:20px;}
 
 /* Services */
 #services li {opacity:0; transform: translateY(20px); transition:0.6s ease;}
@@ -64,4 +69,10 @@ section {padding:50px 20px; max-width:900px; margin:0 auto;}
 .pay-btn {background:#00aaff; color:white; border:none; padding:10px 15px; border-radius:5px; cursor:pointer; margin-top:10px;}
 
 /* WhatsApp Button */
-#whatsapp-btn {background:#25D366; color:white; border:none; padding:12px 22px; border-radius:25px; cursor:pointer; margin-top
+#whatsapp-btn {background:#25D366; color:white; border:none; padding:12px 22px; border-radius:25px; cursor:pointer; margin-top:20px;}
+
+/* Footer */
+footer {background:#064d14; color:white; text-align:center; padding:20px;}
+footer a {color:white; text-decoration:none;}
+footer a:hover {color:#ffd700;}
+.footer-links {margin-top:10px;}
