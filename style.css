@@ -682,3 +682,20 @@ body {
     visibility: hidden;
   }
 }
+#enter-site {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #ffd700;
+  color: #064d14;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#enter-site:hover {
+  background: white;
+  transform: scale(1.05);
+}
