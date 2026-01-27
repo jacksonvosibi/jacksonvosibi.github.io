@@ -730,3 +730,8 @@ body {
   margin-top: 10px;
   border-radius: 5px;
 }
+.navbar a {
+  color: #ffffff !important;
+  font-weight: 500;
+  text-decoration: none;
+}
