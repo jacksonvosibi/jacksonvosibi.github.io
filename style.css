@@ -19,23 +19,40 @@ body {font-family: Arial, sans-serif; line-height: 1.6; background:#f0f0f0;}
 #main-content {display:none;}
 
 /* Navbar */
-.navbar {background:#064d14; display:flex; justify-content:space-between; align-items:center; padding:15px;}
-.navbar .logo {color:white; font-weight:bold;}
-.navbar ul {display:flex; list-style:none;}
-.navbar ul li {margin:0 15px;}
-.navbar ul li a {color:white; text-decoration:none; font-weight:500;}
-.navbar ul li a:hover, .navbar ul li a.active {color:#00aaff;}
-
-/* Hamburger Menu */
-.hamburger {display:none; flex-direction:column; cursor:pointer;}
-.hamburger div {width:25px; height:3px; background:white; margin:4px 0;}
-@media screen and (max-width:768px){
-  .nav-links {display:none; flex-direction:column; background:#064d14; position:absolute; top:60px; right:0; width:100%; text-align:center;}
-  .nav-links li {margin:15px 0;}
-  .hamburger {display:flex;}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0b5d1e;
+  padding: 15px 25px;
 }
-.nav-links.active {display:flex;}
 
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar ul li a:hover {
+  color: #00c3ff;
+}
 /* Hero */
 
 /* Hero without video */
