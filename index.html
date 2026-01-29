@@ -3,210 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AJASCO DESIGN - Professional design and creative solutions.">
-  <title>AJASCO DESIGN</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    /* Reset & Base */
-    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif; }
-    body { line-height:1.6; color:#333; }
-    a { text-decoration:none; color: inherit; }
-    img { max-width:100%; display:block; }
-
-    /* Header */
-    header { background:#1a1a1a; color:#fff; padding:20px 0; position:sticky; top:0; z-index:1000; }
-    .container { width:90%; max-width:1200px; margin:0 auto; }
-    nav { display:flex; justify-content:space-between; align-items:center; }
-    nav .logo { font-size:1.8rem; font-weight:700; color:#ff4c00; }
-    nav ul { display:flex; list-style:none; }
-    nav ul li { margin-left:20px; }
-    nav ul li a { color:#fff; font-weight:500; transition:0.3s; }
-    nav ul li a:hover { color:#ff4c00; }
-
-    /* Hero */
-    .hero { display:flex; flex-direction:column; align-items:center; justify-content:center; height:90vh; text-align:center; background:#f5f5f5; }
-    .hero h1 { font-size:3rem; color:#1a1a1a; margin-bottom:10px; }
-    .hero p { font-size:1.2rem; margin-bottom:20px; }
-    .hero a { padding:10px 30px; background:#ff4c00; color:#fff; border-radius:5px; font-weight:500; transition:0.3s; }
-    .hero a:hover { background:#e54300; }
-
-    /* Sections */
-    section { padding:80px 0; }
-    section h2 { text-align:center; margin-bottom:40px; font-size:2.2rem; color:#1a1a1a; }
-    .about, .services, .portfolio, .testimonials, .contact { background:#fff; }
-
-    /* About */
-    .about-content { display:flex; flex-wrap:wrap; align-items:center; gap:30px; }
-    .about-content .text { flex:1; }
-    .about-content .text p { margin-bottom:20px; }
-    .about-content .image { flex:1; }
-
-    /* Services */
-    .services-cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-    .service-card { flex:1 1 250px; background:#f5f5f5; padding:30px; border-radius:10px; text-align:center; transition:0.3s; }
-    .service-card:hover { transform:translateY(-5px); box-shadow:0 5px 15px rgba(0,0,0,0.1); }
-    .service-card i { font-size:2.5rem; color:#ff4c00; margin-bottom:15px; }
-
-    /* Portfolio */
-    .portfolio-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-    .portfolio-item { position:relative; overflow:hidden; border-radius:10px; }
-    .portfolio-item img { transition:0.3s; }
-    .portfolio-item:hover img { transform:scale(1.1); }
-    .portfolio-item .overlay { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); color:#fff; display:flex; align-items:center; justify-content:center; opacity:0; transition:0.3s; text-align:center; padding:20px; }
-    .portfolio-item:hover .overlay { opacity:1; }
-
-    /* Testimonials */
-    .testimonial { background:#f5f5f5; padding:40px; border-radius:10px; text-align:center; }
-    .testimonial p { font-style:italic; margin-bottom:15px; }
-    .testimonial h4 { color:#ff4c00; }
-
-    /* Contact */
-    .contact form { max-width:600px; margin:0 auto; display:flex; flex-direction:column; gap:20px; }
-    .contact form input, .contact form textarea { padding:15px; border:1px solid #ccc; border-radius:5px; width:100%; }
-    .contact form button { padding:15px; background:#ff4c00; color:#fff; border:none; border-radius:5px; cursor:pointer; transition:0.3s; }
-    .contact form button:hover { background:#e54300; }
-
-    /* Footer */
-    footer { background:#1a1a1a; color:#fff; text-align:center; padding:20px 0; }
-    footer a { color:#ff4c00; margin:0 10px; transition:0.3s; }
-    footer a:hover { color:#fff; }
-
-    @media(max-width:768px){
-      nav ul { flex-direction:column; gap:10px; }
-      .about-content { flex-direction:column; }
-    }
-  </style>
+  <title>AJASCO Design Services</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">AJASCO DESIGN</div>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- Welcome Screen -->
+<div id="welcome-screen">
+  <h1>WELCOME TO</h1>
+  <h2>AJASCO DESIGN SERVICES</h2>
+  <button id="enter-site">ENTER SITE</button>
+</div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Creative Designs, Professional Solutions</h1>
-      <p>We bring your ideas to life with modern, clean, and functional designs.</p>
-      <a href="#contact">Get Started</a>
-    </div>
-  </section>
+<div id="main-content">
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <div class="about-content">
-        <div class="text">
-          <p>AJASCO DESIGN is a professional design agency specializing in web design, branding, and creative solutions. Our mission is to help businesses and individuals establish a strong digital presence with clean, functional, and visually appealing designs.</p>
-          <p>We combine creativity with technology to deliver results that exceed expectations.</p>
-        </div>
-        <div class="image">
-          <img src="https://via.placeholder.com/500x350.png?text=AJASCO+DESIGN" alt="About AJASCO DESIGN">
-        </div>
-      </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AJASCO DESIGN</div>
+    <div class="hamburger" id="hamburger">
+      <div></div><div></div><div></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <video autoplay muted loop id="hero-video">
+      <source src="videos/intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+      <h1>WELCOME TO AJASCO DESIGN SERVICES</h1>
+      <p>We help businesses and schools grow online</p>
+      <button id="welcomeVoice" class="voice-btn">🔊 Hear Welcome</button>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="services-cards">
-        <div class="service-card">
-          <i class="fas fa-laptop-code"></i>
-          <h3>Web Design</h3>
-          <p>Modern and responsive websites designed to capture your brand's essence and engage users.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-paint-brush"></i>
-          <h3>Branding</h3>
-          <p>Creative branding solutions including logos, visual identity, and marketing materials.</p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-mobile-alt"></i>
-          <h3>UI/UX Design</h3>
-          <p>User-focused interfaces that provide smooth navigation and optimal user experience.</p>
-        </div>
+  <section id="services">
+    <h2>Our Design Services</h2>
+    <ul>
+      <li>Website Creation</li>
+      <li>School Identity Cards Design</li>
+      <li>Dashboard Setup</li>
+      <li>Deposit Method Integration</li>
+    </ul>
+
+    <!-- Client Comments -->
+    <div id="service-comments">
+      <h3>Client Comments</h3>
+      <form id="comment-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="comment" placeholder="Write your comment..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+      <div id="comments-list"></div>
+    </div>
+  </section>
+
+  <!-- Pricing / Mock Questions Section -->
+  <section id="pricing">
+    <h2>Regional Mock Questions</h2>
+    <div class="mock-list">
+      <div class="mock-item">
+        <p>Form 4 Regional Mock - 2025</p>
+        <button class="pay-btn" data-file="mock_questions/form4_2025.pdf" data-price="500">
+          Pay 500 FCFA & Download
+        </button>
+      </div>
+      <div class="mock-item">
+        <p>Form 3 Regional Mock - 2025</p>
+        <button class="pay-btn" data-file="mock_questions/form3_2025.pdf" data-price="500">
+          Pay 500 FCFA & Download
+        </button>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-      <h2>Our Portfolio</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/400x300.png?text=Project+1" alt="Project 1">
-          <div class="overlay"><h3>Project 1</h3></div>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/400x300.png?text=Project+2" alt="Project 2">
-          <div class="overlay"><h3>Project 2</h3></div>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/400x300.png?text=Project+3" alt="Project 3">
-          <div class="overlay"><h3>Project 3</h3></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonial">
-        <p>"AJASCO DESIGN transformed our website into a modern, professional platform. Their creativity and attention to detail are unmatched!"</p>
-        <h4>- Jane Doe, CEO of ExampleCo</h4>
-      </div>
-      <div class="testimonial">
-        <p>"Excellent service! They understood our vision and delivered exceptional branding solutions."</p>
-        <h4>- John Smith, Marketing Manager</h4>
-      </div>
-    </div>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About AJASCO</h2>
+    <p>We help businesses and schools grow online. Our expertise spans web design, digital marketing, and branding.</p>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="650229474">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form action="jvosibi01@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@ajasco.com</p>
+    <p>Phone: +237 6XXXXXXX</p>
+    <button id="whatsapp-btn">Chat with us on WhatsApp</button>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2026 AJASCO DESIGN. All rights reserved.</p>
-      <div>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+    <p>&copy; 2026 AJASCO Design Services. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a> | 
+      <a href="#services">Services</a> | 
+      <a href="#pricing">Pricing</a> | 
+      <a href="#about">About</a>
     </div>
   </footer>
 
+</div>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
