@@ -90,3 +90,12 @@ payButtons.forEach(btn => {
     handler.openIframe();
   });
 });
+// View Our Services button scroll
+const viewServicesBtn = document.getElementById("viewServices");
+if (viewServicesBtn) {
+  viewServicesBtn.addEventListener("click", () => {
+    document.getElementById("services").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+}
